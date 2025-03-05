@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            width: 1400px;
+            margin: 10px auto;
+        }
+        
+        
+        details {
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    display: block;
+    width: 80%; 
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+        summary {
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            margin: 50px auto;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: rgb(255, 255, 255);
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container {
+            margin: 50px auto;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .back-btn {
+            background: orange;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: darkgreen;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background: orange;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+
+        .next-page-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .next-page-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img src="Loyola_LogoO.jpg" alt="Logo" class="logo">
+   
+       <body>
+        <details>
+            <summary>BIO </summary>
+            <h2 style="text-align:center;">Student Details</h2>
+    
+    <table>
+        <tr>
+            <th colspan="4">Personal Details</th>
+            <th class="photo" rowspan="6"><img src="student_photo.jpg" alt="Student Photo"></th>
+        </tr>
+        <tr>
+            <td><strong>Admission No</strong></td>
+            <td>8958</td>
+            <td><strong>Semester</strong></td>
+            <td>IV B.Tech I Semester</td>
+        </tr>
+        <tr>
+            <td><strong>Roll No</strong></td>
+            <td>24E51A67C4</td>
+            <td><strong>Date of Birth</strong></td>
+            <td>24/06/2005</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>NADIKOTA BOLA PRAVEEN KUMAR</td>
+            <td><strong>Religion</strong></td>
+            <td>Hindu</td>
+        </tr>
+        <tr>
+            <td><strong>Course</strong></td>
+            <td>B.Tech</td>
+            <td><strong>Inter Marks (%)</strong></td>
+            <td>622.59</td>
+            <td>Eamcet rank</td>
+            <td>20,000</td>
+        </tr>
+        <tr>
+            <td><strong>Branch</strong></td>
+            <td>CSE (Data Science)</td>
+            <td><strong>Entrance Type</strong></td>
+            <td>EAMCET</td>
+        </tr>
+        <tr>
+            <td><strong>Phone No</strong></td>
+            <td>9885048839</td>
+            <td><strong>Email</strong></td>
+            <td>nadikotabolapraveen@gmail.com</td>
+        </tr>
+    </table>
+    
+    <h2 style="text-align:center;">Parent's Details</h2>
+    
+    <table>
+        <tr>
+            <th>Father Name</th>
+            <td>NADIKOTA VEERA VENKATA SURESH</td>
+            <th>Occupation</th>
+            <td>DOCUMENT WRITER</td>
+        </tr>
+        <tr>
+            <th>Mother Name</th>
+            <td>NADIKOTA MOUNIKA</td>
+            <th>Occupation</th>
+            <td>HOUSE WIFE</td>
+        </tr>
+        <tr>
+            <th>Father Mobile</th>
+            <td>9885047206</td>
+            <th>Mother Mobile</th>
+            <td>9642426280</td>
+        </tr>
+        <tr>
+            <th>Correspondence Address</th>
+            <td colspan="3">YSR STATUE ROAD, AKON DURU VISSANNAPETA, ANDHRA PRADESH 521215</td>
+        </tr>
+    </table>
+        </details>
+        <details>
+            <summary>Academic calendar </summary>
+            <img src="syllabus.png" alt="Logo" class="logo">
+        </details>
+       </body>
+       <body>
+        <details>
+            <summary>Attendance</summary>
+            <img src="Attendance.jpg" alt="Logo" class="logo">
+        </details>
+       </body>
+       <body>
+        <details>
+            <summary>CGPA & SGPA</summary>
+            <div class="container">
+                <h1>Student Grades and CGPA/SGPA Calculator</h1>
+                <table id="gradesTable">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Credits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="subject1" placeholder="Subject 1" /></td>
+                            <td><input type="text" id="grade1" placeholder="Grade (A, B, C, etc.)" /></td>
+                            <td><input type="number" id="credits1" placeholder="Credits" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="subject2" placeholder="Subject 2" /></td>
+                            <td><input type="text" id="grade2" placeholder="Grade (A, B, C, etc.)" /></td>
+                            <td><input type="number" id="credits2" placeholder="Credits" /></td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+                <div class="input-group">
+                    <label for="sgpa">SGPA:</label>
+                    <input type="text" id="sgpa" readonly />
+                </div>
+                <div class="input-group">
+                    <label for="cgpa">CGPA:</label>
+                    <input type="text" id="cgpa" readonly />
+                </div>
+                <button onclick="calculateCGPA()">Calculate CGPA</button>
+                <button onclick="calculateSGPA()">Calculate SGPA</button>
+                <p id="result"></p>
+            </div>
+        
+            <script>
+                function gradeToPoint(grade) {
+                    switch (grade.toUpperCase()) {
+                        case 'S': return 12;
+                        case 'A': return 10;
+                        case 'B': return 8;
+                        case 'C': return 6;
+                        case 'D': return 4;
+                        case 'E': return 2;
+                        case 'F': return 0;
+                        default: return 0;
+                    }
+                }
+        
+                function calculateCGPA() {
+                    const grades = [
+                        { grade: document.getElementById('grade1').value, credits: parseInt(document.getElementById('credits1').value) },
+                        { grade: document.getElementById('grade2').value, credits: parseInt(document.getElementById('credits2').value) }
+                        
+                    ];
+        
+                    let totalCredits = 0;
+                    let totalPoints = 0;
+        
+                    grades.forEach(entry => {
+                        const points = gradeToPoint(entry.grade) * entry.credits;
+                        totalPoints += points;
+                        totalCredits += entry.credits;
+                    });
+        
+                    const cgpa = totalPoints / totalCredits;
+                    document.getElementById('cgpa').value = cgpa.toFixed(2);
+                    document.getElementById('result').innerText = "CGPA: " + cgpa.toFixed(2);
+                }
+        
+                function calculateSGPA() {
+                    const grades = [
+                        { grade: document.getElementById('grade1').value, credits: parseInt(document.getElementById('credits1').value) },
+                        { grade: document.getElementById('grade2').value, credits: parseInt(document.getElementById('credits2').value) }
+                       
+                    ];
+        
+                    let totalCredits = 0;
+                    let totalPoints = 0;
+        
+                    grades.forEach(entry => {
+                        const points = gradeToPoint(entry.grade) * entry.credits;
+                        totalPoints += points;
+                        totalCredits += entry.credits;
+                    });
+        
+                    const sgpa = totalPoints / totalCredits;
+                    document.getElementById('sgpa').value = sgpa.toFixed(2);
+                    document.getElementById('result').innerText = "SGPA: " + sgpa.toFixed(2);
+                }
+            </script>
+        </body>
+        </html>
+        </details>
+       </body> <body>
+        
+        <details>
+            <summary>Complaint panel</summary>
+            <div class="container">
+                <h1>Complaint Panel</h1>
+        
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="text" id="student_id" placeholder="Student ID" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+        
+                <a href="index.html" class="back-btn">Back to Home</a>
+            </div>
+        
+            <script>
+                
+                emailjs.init("SQP7sViYBcjoKTrFg");
+        
+                document.getElementById("contactForm").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    
+                    let name = document.getElementById("name").value;
+                    let student_id = document.getElementById("student_id").value;
+                    let subject = document.getElementById("subject").value;
+                    let message = document.getElementById("message").value;
+        
+                    if (name && student_id && subject && message) {
+                        let templateParams = {
+                            from_name: name,
+                            student_id: student_id,
+                            subject: subject,
+                            message: message,
+                            to_email: "bethampudisanjanasilisanju@gmail.com" 
+                        };
+        
+                        emailjs.send("service_j25kapa", "template_gmgiemo", templateParams)
+                        .then(function(response) {
+                            alert("Complaint sent successfully!");
+                            document.getElementById("contactForm").reset();
+                        }, function(error) {
+                            alert("Failed to send complaint. Please try again.");
+                            console.log("Error:", error);
+                        });
+                    } else {
+                        alert("Please fill in all fields.");
+                    }
+                });
+            </script>
+        
+        </body>
+        </html>
+        
+        </details>
+       </body> <body>
+        <details>
+            <summary>Department:Faculty </summary>
+            <p>h</p>
+        </details>
+       </body> <body>
+        <details>
+            <summary>Disciplinary panel</summary>
+            <div class="container">
+                <h1>All Students</h1>
+                
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Punishment</th>
+                            <th>Hours</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+        
+                <a href="index.html"><button class="back-btn">Back to Main Page</button></a>
+            </div>
+        
+            <script>
+                function showAllStudents() {
+                    let students = JSON.parse(localStorage.getItem("students")) || {};
+                    let tableBody = document.getElementById("studentTable").getElementsByTagName("tbody")[0];
+                    tableBody.innerHTML = "";
+        
+                    Object.keys(students).forEach(id => {
+                        let student = students[id];
+                        let row = `<tr>
+                            <td>${student.name}</td>
+                            <td>${student.punishment}</td>
+                            <td>${student.hours}</td>
+                            <td>${student.completed ? "Completed" : "Not Completed"}</td>
+                        </tr>`;
+                        tableBody.innerHTML += row;
+                    });
+                }
+        
+                showAllStudents();
+            </script>
+        
+        </details>
+       </body> <body>
+        <details>
+            <summary>E-Book</summary>
+            <div class="container">
+                <h1>Uploaded Files</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Uploaded By</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fileList"></tbody>
+                </table>
+                <br>
+                <a href="upload.html" class="back-btn">Upload New File</a>
+            </div>
+        
+            <script>
+                function loadFiles() {
+                    let files = JSON.parse(localStorage.getItem("files")) || [];
+                    let fileList = document.getElementById("fileList");
+                    fileList.innerHTML = "";
+        
+                    files.forEach((file, index) => {
+                        let row = document.createElement("tr");
+                        row.innerHTML = `
+                            <td>${file.name}</td>
+                            <td>${file.uploadedBy}</td>
+                            <td><a href="${file.url}" download="${file.name}">Download</a></td>
+                        `;
+                        fileList.appendChild(row);
+                    });
+                }
+        
+                document.addEventListener("DOMContentLoaded", loadFiles);
+            </script>
+        
+       
+        
+        </details>
+       </body> <body>
+       
+        <details>
+            <summary>Syllabus</summary>
+            <p>I:
+                
+                • 1-1
+                
+                • 1-2
+                </p>
+                <p>II: 2-1
+                
+                    • 2-2</p>
+                    <p>III: 3-1
+                    
+                        • 3-2</p>
+                        <p>IV: 4-1
+                        
+                            • 4-2</p>
+        </details>
+       </body> <body>
+        <details>
+        <summary>Clubs</summary>
+        <h2 style="text-align:center;">Various Clubs of ALIET</h2>
+ 
+        <table>
+         <p>literary clubs :</p>
+            <tr>
+                <th>Mrs E . kavalavathi</th>
+                
+                <th>S&H (Faculty coordinator)</th>  
+            </tr>
+            <tr>
+             <th>Sr . Dr candy D'Cunha</th>
+    
+             <th>S&H</th>            
+         </tr>
+         <tr>
+             <th>Mrs p.prescilla</th>
+    
+             <th>S&H</th>            
+         </tr>
+         
+            <tr>
+             </table>
+             <p>Student Coordinators</p>
+             <table>
+                 <tr>
+                     <th>S.Pranuti</th>
+                     <th>lll CSE-1</th>
+                 </tr>
+                 <tr>
+                     <tr>
+                         <th>K.Merlin</th>
+                         <th>
+                             lll CSD-1
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>
+                             T.Meghana
+                         </th>
+                         <th>
+                             lll ECE-2
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>
+                             K.Brunda
+                         </th>
+                         <th>l IT</th>
+                     </tr>
+                     <tr>
+                         <th>
+                             J.Amrutha Varshini
+                         </th>
+                         <th>
+                             l CSE-1
+                         </th>
+                     </tr>
+                 </table>
+                 <table>
+                     <p>Euphonious Voices Club :				                    </p>
+                     
+                     <tr>
+                         <th>          Mrs N. Dyva Krupa                                                      </th>
+                         <th>   S&H   	(Faculty Coordinator)			
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>          Dr  K. Mariya Priyadarshini       </th>
+                         <th>                 ECE				
+                         </th>
+                     </tr>
+                 </table>
+                 <table>
+                     <p>Student coordinators :				
+                     </p>
+                     <tr>
+                         <th>          Ankitha                             			
+                         </th>
+                         <th>                          ||   CSE-1	</th>
+                     </tr>
+                     <tr>
+                         <th>Vani Chelsea </th>
+                         <th>                                                       ||   CSE-1				
+                         </th>
+                     </tr>
+                     <tr>
+                         <th> Blessy  </th>
+                         <th>                                                               ||   ECE-1				
+                         </th>
+                     </tr>
+                     <tr>
+                         <th> Meghna    </th>
+                         <th>                                                          ||   ECE-1 				
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>Thraya Gayathri </th>
+                         <th>                                                 |||   CSE				
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>Annie </th>
+                         <th>                                                                 |||    CSE				
+                         </th>
+                     </table>
+                    
+        
+    </details>
+   </body> <body>
+     
+        <details>
+            <summary>Webinar</summary>
+            <div class="container">
+       
+                <button class=" .next-page-btn" onclick="goToNextPage()">Webinar</button>
+            </div>
+            <script>
+                function goToNextPage() {
+                    window.location.href = "index3.html";
+                }
+            </script>
+        </details>
+       </body>
+       <div>
+        <a href="index.html"><button class="back-btn">Logout</button></a>
+       </div>
+      
+    </div>
+</body>
+</html>

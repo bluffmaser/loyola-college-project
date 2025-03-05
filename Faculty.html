@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .logo {
+            width: 1400px;
+            margin: 10px auto;
+        }
+        
+        
+        details {
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    display: block;
+    width: 80%; 
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+        summary {
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            margin: 50px auto;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            background: rgb(255, 255, 255);
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container {
+            margin: 50px auto;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .back-btn {
+            background: orange;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: darkgreen;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background: orange;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+
+        .next-page-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .next-page-btn:hover {
+            background-color: #0056b3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+        }
+        .container {
+            margin: 50px auto;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .upload-btn, .clear-btn {
+            background: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .clear-btn {
+            background: red;
+        }
+        .switch {
+            margin-top: 20px;
+            display: inline-block;
+            background: blue;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="Loyola_LogoO.jpg" alt="Logo" class="logo">
+   
+       <body>
+        <details>
+            <summary>BIO </summary>
+            <h2 style="text-align:center;">Faculty Details</h2>
+    
+    <table>
+        <tr>
+            <th colspan="4">Personal Details</th>
+            <th class="photo" rowspan="6"><img src="student_photo.jpg" alt="Student Photo"></th>
+        </tr>
+        <tr>
+            <td><strong>Admission No</strong></td>
+            <td>8958</td>
+            <td><strong>Semester</strong></td>
+            <td>IV B.Tech I Semester</td>
+        </tr>
+        <tr>
+            <td><strong>Roll No</strong></td>
+            <td>24E51A67C4</td>
+            <td><strong>Date of Birth</strong></td>
+            <td>24/06/2005</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>NADIKOTA BOLA PRAVEEN KUMAR</td>
+            <td><strong>Religion</strong></td>
+            <td>Hindu</td>
+        </tr>
+        <tr>
+            <td><strong>Course</strong></td>
+            <td>B.Tech</td>
+            <td><strong>Inter Marks (%)</strong></td>
+            <td>622.59</td>
+           
+        </tr>
+        <tr>
+            <td><strong>Branch</strong></td>
+            <td>CSE (Data Science)</td>
+            <td><strong>Entrance Type</strong></td>
+            <td>EAMCET</td>
+        </tr>
+        <tr>
+            <td><strong>Phone No</strong></td>
+            <td>9885048839</td>
+            <td><strong>Email</strong></td>
+            <td>nadikotabolapraveen@gmail.com</td>
+        </tr>
+    </table>
+        </details>
+    
+   
+        <details>
+            <summary>Academic calendar </summary>
+            <img src="syllabus.png" alt="Logo" class="logo">
+        </details>
+       </body>
+       <body>
+        <details>
+            <summary>Attendance</summary>
+            <img src="Attendance.jpg" alt="Logo" class="logo">
+        </details>
+       </body>
+       <body>
+       
+        <details>
+            <summary>Department:Faculty </summary>
+            <p>h</p>
+        </details>
+       </body> <body>
+        <details>
+            <summary>Disciplinary panel</summary>
+            <div class="container">
+                <h1>Disciplinary Panel</h1>
+                
+                <h3>Add Student</h3>
+                <input type="text" id="student_id" placeholder="Student ID">
+                <input type="text" id="student_name" placeholder="Student Name">
+                <input type="text" id="punishment" placeholder="Punishment">
+                <input type="number" id="hours" placeholder="Hours">
+                <button onclick="addStudent()">Add Student</button>
+        
+                <h3>Mark Completed</h3>
+                <input type="text" id="completed_id" placeholder="Student ID">
+                <button class="completed-btn" onclick="markCompleted()">Mark Completed</button>
+        
+                <h3>Show Attendance</h3>
+                <input type="text" id="attendance_id" placeholder="Student ID">
+                <button onclick="showAttendance()">Show Attendance</button>
+        
+                <h3>All Students</h3>
+                <button onclick="showAllStudents()">View All Students</button>
+                <button class="clear-btn" onclick="clearAll()">Clear All Records</button>
+        
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Punishment</th>
+                            <th>Hours</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        
+            <script>
+                let students = JSON.parse(localStorage.getItem("students")) || {};
+        
+                function addStudent() {
+                    let id = document.getElementById("student_id").value;
+                    let name = document.getElementById("student_name").value;
+                    let punishment = document.getElementById("punishment").value;
+                    let hours = document.getElementById("hours").value;
+        
+                    if (id && name && punishment && hours) {
+                        students[id] = { name, punishment, hours, completed: false };
+                        localStorage.setItem("students", JSON.stringify(students));
+                        alert("Student added successfully!");
+                        showAllStudents();
+                    } else {
+                        alert("Please fill all fields!");
+                    }
+                }
+        
+                function markCompleted() {
+                    let id = document.getElementById("completed_id").value;
+                    if (students[id]) {
+                        students[id].completed = true;
+                        localStorage.setItem("students", JSON.stringify(students));
+                        alert(`${students[id].name} has completed their punishment.`);
+                        showAllStudents();
+                    } else {
+                        alert("Student not found.");
+                    }
+                }
+        
+                function showAttendance() {
+                    let id = document.getElementById("attendance_id").value;
+                    if (students[id]) {
+                        let student = students[id];
+                        let status = student.completed ? "Completed" : "Not Completed";
+                        alert(`Student: ${student.name}\nPunishment: ${student.punishment}\nHours: ${student.hours}\nStatus: ${status}`);
+                    } else {
+                        alert("Student not found.");
+                    }
+                }
+        
+                function showAllStudents() {
+                    let tableBody = document.getElementById("studentTable").getElementsByTagName("tbody")[0];
+                    tableBody.innerHTML = "";
+        
+                    Object.keys(students).forEach(id => {
+                        let student = students[id];
+                        let row = `<tr>
+                            <td>${student.name}</td>
+                            <td>${student.punishment}</td>
+                            <td>${student.hours}</td>
+                            <td>${student.completed ? "Completed" : "Not Completed"}</td>
+                        </tr>`;
+                        tableBody.innerHTML += row;
+                    });
+                }
+        
+                function clearAll() {
+                    if (confirm("Are you sure you want to delete all records?")) {
+                        localStorage.removeItem("students");
+                        students = {};
+                        showAllStudents();
+                        alert("All records cleared!");
+                    }
+                }
+        
+                showAllStudents();
+            </script>
+        
+        </body>
+        </html>
+        
+        
+        </details>
+       </body> <body>
+        <details>
+            <summary>E-Book</summary>
+         
+            <div class="container" id="uploadSection">
+                <h1>Upload File</h1>
+                <form id="uploadForm">
+                    <label for="teacher_name">Your Name:</label>
+                    <input type="text" id="teacher_name" name="teacher_name" required><br><br>
+        
+                    <label for="file">Choose File (PDF only):</label>
+                    <input type="file" id="file" name="file" accept=".pdf" required><br><br>
+        
+                    <button type="submit" class="upload-btn">Upload</button>
+                </form>
+                <br>
+                <a href="#" class="switch" onclick="showFiles()">View Uploaded Files</a>
+            </div>
+        
+            <div class="container" id="fileListSection" style="display: none;">
+                <h1>Uploaded Files</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Uploaded By</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fileList"></tbody>
+                </table>
+                <br>
+                <button class="clear-btn" onclick="clearAllFiles()">Clear All Files</button>
+                <br><br>
+                <a href="#" class="switch" onclick="showUpload()">Upload New File</a>
+            </div>
+        
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    if (document.getElementById("uploadForm")) {
+                        document.getElementById("uploadForm").addEventListener("submit", function (e) {
+                            e.preventDefault();
+                            
+                            let teacherName = document.getElementById("teacher_name").value;
+                            let fileInput = document.getElementById("file").files[0];
+        
+                            if (fileInput && fileInput.type === "application/pdf") {
+                                let reader = new FileReader();
+                                reader.onload = function (e) {
+                                    let fileData = {
+                                        name: fileInput.name,
+                                        uploadedBy: teacherName,
+                                        url: e.target.result
+                                    };
+        
+                                    let files = JSON.parse(localStorage.getItem("files")) || [];
+                                    files.push(fileData);
+                                    localStorage.setItem("files", JSON.stringify(files));
+        
+                                    alert("File uploaded successfully!");
+                                    showFiles();
+                                };
+                                reader.readAsDataURL(fileInput);
+                            } else {
+                                alert("Only PDF files are allowed!");
+                            }
+                        });
+                    }
+                    loadFiles();
+                });
+        
+                function loadFiles() {
+                    let files = JSON.parse(localStorage.getItem("files")) || [];
+                    let fileList = document.getElementById("fileList");
+                    fileList.innerHTML = "";
+        
+                    files.forEach((file, index) => {
+                        let row = document.createElement("tr");
+                        row.innerHTML = `
+                            <td>${file.name}</td>
+                            <td>${file.uploadedBy}</td>
+                            <td><a href="${file.url}" download="${file.name}">Download</a></td>
+                        `;
+                        fileList.appendChild(row);
+                    });
+                }
+        
+                function clearAllFiles() {
+                    if (confirm("Are you sure you want to delete all uploaded files?")) {
+                        localStorage.removeItem("files");
+                        loadFiles();
+                        alert("All uploaded files have been cleared!");
+                    }
+                }
+        
+                function showFiles() {
+                    document.getElementById("uploadSection").style.display = "none";
+                    document.getElementById("fileListSection").style.display = "block";
+                    loadFiles();
+                }
+        
+                function showUpload() {
+                    document.getElementById("uploadSection").style.display = "block";
+                    document.getElementById("fileListSection").style.display = "none";
+                }
+            </script>
+        
+        
+        </details>
+       </body> <body>
+       
+        <details>
+            <summary>Syllabus</summary>
+            <p>I:
+                
+                • 1-1
+                
+                • 1-2
+                </p>
+                <p>II: 2-1
+                
+                    • 2-2</p>
+                    <p>III: 3-1
+                    
+                        • 3-2</p>
+                        <p>IV: 4-1
+                        
+                            • 4-2</p>
+        </details>
+       </body> <body>
+        <details>
+        <summary>Clubs</summary>
+        <h2 style="text-align:center;">Various Clubs of ALIET</h2>
+ 
+        <table>
+         <p>literary clubs :</p>
+            <tr>
+                <th>Mrs E . kavalavathi</th>
+                
+                <th>S&H (Faculty coordinator)</th>  
+            </tr>
+            <tr>
+             <th>Sr . Dr candy D'Cunha</th>
+    
+             <th>S&H</th>            
+         </tr>
+         <tr>
+             <th>Mrs p.prescilla</th>
+    
+             <th>S&H</th>            
+         </tr>
+         
+            <tr>
+             </table>
+             <p>Student Coordinators</p>
+             <table>
+                 <tr>
+                     <th>S.Pranuti</th>
+                     <th>lll CSE-1</th>
+                 </tr>
+                 <tr>
+                     <tr>
+                         <th>K.Merlin</th>
+                         <th>
+                             lll CSD-1
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>
+                             T.Meghana
+                         </th>
+                         <th>
+                             lll ECE-2
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>
+                             K.Brunda
+                         </th>
+                         <th>l IT</th>
+                     </tr>
+                     <tr>
+                         <th>
+                             J.Amrutha Varshini
+                         </th>
+                         <th>
+                             l CSE-1
+                         </th>
+                     </tr>
+                 </table>
+                 <table>
+                     <p>Euphonious Voices Club :				                    </p>
+                     
+                     <tr>
+                         <th>          Mrs N. Dyva Krupa                                                      </th>
+                         <th>   S&H   	(Faculty Coordinator)			
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>          Dr  K. Mariya Priyadarshini       </th>
+                         <th>                 ECE				
+                         </th>
+                     </tr>
+                 </table>
+                 <table>
+                     <p>Student coordinators :				
+                     </p>
+                     <tr>
+                         <th>          Ankitha                             			
+                         </th>
+                         <th>                          ||   CSE-1	</th>
+                     </tr>
+                     <tr>
+                         <th>Vani Chelsea </th>
+                         <th>                                                       ||   CSE-1				
+                         </th>
+                     </tr>
+                     <tr>
+                         <th> Blessy  </th>
+                         <th>                                                               ||   ECE-1				
+                         </th>
+                     </tr>
+                     <tr>
+                         <th> Meghna    </th>
+                         <th>                                                          ||   ECE-1 				
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>Thraya Gayathri </th>
+                         <th>                                                 |||   CSE				
+                         </th>
+                     </tr>
+                     <tr>
+                         <th>Annie </th>
+                         <th>                                                                 |||    CSE				
+                         </th>
+                     </table>
+                    
+        
+    </details>
+   </body> <body>
+     
+        <details>
+            <summary>Webinar</summary>
+            <div class="container">
+       
+                <button class=" .next-page-btn" onclick="goToNextPage()">Webinar</button>
+            </div>
+            <script>
+                function goToNextPage() {
+                    window.location.href = "index3.html";
+                }
+            </script>
+        </details>
+       </body>
+       
+       <div>
+        <a href="index.html"><button class="back-btn">Logout</button></a>
+       </div>
+    </div>
+</body>
+</html>

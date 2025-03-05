@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Meeting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        video {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+            border: 2px solid black;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>New Meeting</h2>
+    <video id="localVideo" autoplay playsinline></video>
+    <div class="controls">
+        <button onclick="startVideo()">Start Video</button>
+        <button onclick="stopVideo()">Stop Video</button>
+        <button onclick="endCall()">End Call</button>
+    </div>
+
+    <script>
+        let localStream;
+
+        async function startVideo() {
+            try {
+                localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+                document.getElementById("localVideo").srcObject = localStream;
+            } catch (err) {
+                alert("Error accessing camera: " + err.message);
+            }
+        }
+
+        function stopVideo() {
+            if (localStream) {
+                localStream.getTracks().forEach(track => track.stop());
+                document.getElementById("localVideo").srcObject = null;
+            }
+        }
+
+        function endCall() {
+            stopVideo();
+            window.location.href = "index3.html"; // Redirect to the homepage
+        }
+
+        window.onload = startVideo; // Start video automatically
+    </script>
+
+</body>
+</html>
